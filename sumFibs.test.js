@@ -5,22 +5,25 @@
  * @return {number} - Sum of all Odd fibonacci numbers that are less than or equal to num.
  */
 
-
-
 // function to Calculate sum if all fibonacci numbers that are less than or equal to num.
 function sumFibs(num) {
-    if(num == 1 || num == 2) return 1;
+    if(num == 1 || num == 2)
+        return 1;
+    
     let a = 1;
     let b = 1;
     let currNum = a + b;
     let sumFib = 2;
+    
     // fib(n) = fib(n-1) + fib(n-2);
     while(currNum <= num) {
-        if(currNum & 1) sumFib += currNum;
+        if(currNum & 1) 
+            sumFib += currNum;
         a = b;
         b = currNum;
         currNum = a + b;
     }
+    
     return sumFib;
 }
 /*
