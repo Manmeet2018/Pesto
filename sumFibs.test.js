@@ -1,11 +1,11 @@
 /**
  * Create a new sumFibs
  * @function sumFibs.
- * @param {number} - The positive number whose odd fibonacci numbers sum has to be returned.
- * @return {number} - Sum of all Odd fibonacci numbers that are less than or equal to num.
+ * @param {Number} - Positive no whose sum of lesser odd fibonacci numbers has to be calculated.
+ * @return {Number} - Sum of all Odd fibonacci numbers that are less than or equal to num.
  */
 
-// function to Calculate sum if all fibonacci numbers that are less than or equal to num.
+// function to Calculate sum of all odd fibonacci numbers that are less than or equal to num.
 function sumFibs(num) {
     if(num == 1 || num == 2)
         return 1;
@@ -26,9 +26,9 @@ function sumFibs(num) {
     
     return sumFib;
 }
+
 /*
-    Test Case
-    
+    // Test Case
     console.log(sumFibs(1000));
     console.log(sumFibs(4000000));
     console.log(sumFibs(3));
