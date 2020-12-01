@@ -17,7 +17,7 @@ function sumFibs(num) {
     
     // fib(n) = fib(n-1) + fib(n-2);
     while(currNum <= num) {
-        if(currNum & 1) 
+        if(currNum & 1) // Check odd
             sumFib += currNum;
         a = b;
         b = currNum;
@@ -31,8 +31,8 @@ function sumFibs(num) {
     // Test Case
     console.log(sumFibs(1000));
     console.log(sumFibs(4000000));
-    console.log(sumFibs(3));
-    console.log((sumFibs(4)));
+    console.log(sumFibs(10));
+    console.log((sumFibs(5)));
     console.log((sumFibs(75024)));
     console.log((sumFibs(10)));
 */
