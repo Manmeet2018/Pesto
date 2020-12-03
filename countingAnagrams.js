@@ -8,7 +8,7 @@
 getHash = (word) => {
     let hashArr = new Array();
     for(let iterator = 0; iterator < word.length; ++iterator) {
-        let index = word.charCodeAt(iterator);
+        const index = word.charCodeAt(iterator);
         if(hashArr[index])
             hashArr[index] += 1;
         else
@@ -34,8 +34,8 @@ countingAnagrams = (str) => {
     
     let anagramCount = 0;
     str.split(" ").forEach(element => {
-        let hashValue = getHash(element);
-        let hashString = hashValue.toString();
+        const hashValue = getHash(element);
+        const hashString = hashValue.toString();
         if(element.length > 1) {
             if(hashMap.has(hashString) && !previousOccurence.has(hashString)) {
                 anagramCount++;
